@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson_22_form-validation</title>
+  <!----- CSS ----->
+  <!-- reset.css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!----- JS ----->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0vkuTB0enSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <!-- script -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Form Validation</h1>
+  </header>
+  <main>
+    <form action="form.php" method="post">
+      <!-- テキスト(1行) -->
+      <div id="textSection">
+        <p><label for="text">Text</label></p>
+        <p class="alert">Alert : Text</p>
+        <input type="text" id="text" name="text" value="">
+      </div>
+
+      <!-- ラジオボタン -->
+      <div id="radioSection">
+        <p>Radio</p>
+        <p class="alert">Alert : Radio</p>
+        <input type="radio" id="radio1" name="radio" value="Radio1">
+        <label for="radio1">Radio1</label>
+
+        <input type="radio" id="radio2" name="radio" value="Radio2">
+        <label for="radio2">Radio2</label>
+
+        <input type="radio" id="radio3" name="radio" value="Radio3">
+        <label for="radio3">Radio3</label>
+      </div>
+
+      <!-- チェックボックス -->
+      <div id="checkboxSection">
+        <p>Checkbox</p>
+        <p class="alert">Alert : Checkbox</p>
+        <input type="checkbox" id="checkbox1" name="checkbox" value="Checkbox1">
+        <label for="checkbox1">Checkbox1</label>
+
+        <input type="checkbox" id="checkbox2" name="checkbox" value="Checkbox2">
+        <label for="checkbox2">Checkbox2</label>
+
+        <input type="checkbox" id="checkbox3" name="checkbox" value="Checkbox3">
+        <label for="checkbox3">Checkbox3</label>
+
+        <input type="checkbox" id="checkbox4" name="checkbox" value="Checkbox4">
+        <label for="checkbox4">Checkbox4</label>
+
+        <input type="checkbox" id="checkbox5" name="checkbox" value="Checkbox5">
+        <label for="checkbox5">Checkbox5</label>
+      </div>
+
+      <!-- セレクトボックス -->
+      <div id="selectSection">
+        <p>Select</p>
+        <p class="alert">Alert : Select</p>
+        <select>
+          <option value="none">---</option>
+          <option value="Select1">Select1</option>
+          <option value="Select2">Select2</option>
+          <option value="Select3">Select3</option>
+        </select>
+      </div>
+
+      <!-- テキスト(複数行) -->
+      <div id="textareaSection">
+        <p>
+          <label for="textarea">TextArea</label>
+        </p>
+        <p class="alert">Alert : TextArea</p>
+        <textarea id="textarea" name="textarea"></textarea>
+      </div>
+
+      <!-- 送信ボタン -->
+      <input type="submit" value="Submit" id="submitBtn">
+    </form>
+  </main>
+</body>
+</html>
